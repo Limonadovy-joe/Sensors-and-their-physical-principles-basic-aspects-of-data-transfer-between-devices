@@ -60,6 +60,7 @@
 - **V případech, kdy je deterministický popis signálu příliš složitý se může vyplatit zpracovávat jej jako stochastický signál.**
 
 <br>
+
 - Elektrické signály jsou nosič informace, přičemž vlastní signál může být stejnosměrný, nebo střídavý.
 - Střídavý signál může být dále **nízkofrekvenční (nf) nebo vysokofrekvenční (vf), analogový (spojitý) nebo digitální (nespojitý).**
 - Příklad: Telefonní signál – přeměnou akustické energie lidského hlasu na energii elektrickou se vytváří **elektrický nízkofrekvenční signál** a  je v kmitočtovém hovorovém pásmu 300–3400 Hz
