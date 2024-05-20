@@ -1,0 +1,1 @@
+# Sensors-and-their-physical-principles-basic-aspects-of-data-transfer-between-devices
