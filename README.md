@@ -2,7 +2,7 @@
 
 - [Signal](#signal)
 - [Principles of physical quantity converters](#principles-of-physical-quantity-converters)
-  - [Voltage](#voltage)
+  - [Temperature](#Temperature)
   - [Current](#current)
   - [Resistance](#resistance)
   - [Eletric Power](#eletric-power)
@@ -38,18 +38,18 @@
   - **Periodické** - signál je definovaný pro frekvence a **harmonický nebo neharmonicky průběh**
     - **Harmonický** signál je takový signál, který lze vyjádřit funkcí f(t) - **může být modelován funkcemi sinus nebo kosinus**
     - **Neharmonický signál**
-      -  Periodický neharmonický signál lze vyjádřit pomocí **Fourierovy řady** , která **rozkládá signál na nekonečnou sumu sinusových a kosinusových funkcí.**
+      -  Neharmonický signál lze vyjádřit pomocí **Fourierovy řady** , která **rozkládá signál na nekonečnou sumu sinusových a kosinusových funkcí.**
       -  Pro neperiodické signály může být použit **Fourierova transformace** k vyjádření signálu jako **integrálu harmonických složek s různými frekvencemi.**
   - **neperiodické signal** - nemá periodu, často nazývá **aperiodický signál.**
     - **Impulsní signál (Diracův delta impuls)**
       -  **Diracův delta impuls** je matematickým konceptem s **nekonečnou amplitudou a nulovou šířkou v čase**
       -  **Impulsní charakteristika** je odezva lineárního časově invariantního systému (LTI) na tzv. **Diracův jednotkový impuls**
-        -  je důležitým nástrojem teoretické analýzy **LTI systémů (tedy například filtrů, zesilovačů, PID regulátorů apod.)**, protože konvolucí vstupu s impulzní odezvou lze získat výstup LTI systému.
+        -  je důležitým nástrojem teoretické analýzy **LTI systémů (tedy například filtrů, zesilovačů, PID regulátorů apod.)**, protože **konvolucí** vstupu s impulzní odezvou lze získat výstup LTI systému.
       - Využití v elektrotechnice - Teorie obvodů:  elektrický obvod obsahující zdroj napětí V a odpor R. Při analýze chování obvodu může nastat situace, kdy chceme určit proud, který prochází v určitém čase **t**. V okamžiku t=0 se **zdroj napětí V náhle zapne.**
       - Diracův delta impuls k popisu **okamžité změny napětí na zdroji V**
-      - Napětí V(t)V(t) na zdroji v čase tt lze vyjádřit pomocí Diracova delta impulsu δ(t)δ(t) 
+      - Napětí V(t) na zdroji v čase t lze vyjádřit pomocí Diracova delta impulsu δ(t)δ(t) 
       - umožňuje matematické modelování a analýzu **náhlých změn v elektrických obvodech**
-    - **Šum (náhodný signál), Exponenciálně rostouci, klesající signál**
+      - **Šum (náhodný signál), Exponenciálně rostouci, klesající signál**
 
 - **Stochastický signál** - velikost signálu v libovolném okamžiku, **dovedeme určit pouze s nějakou pravděpodobností.**
 - Stacionární signály  jejichž **statistické vlastnosti zůstávají stejné při posunu v čase**. To znamená, že tyto signály nejsou závislé na poloze počátku časové osy.
@@ -58,6 +58,12 @@
 
 - Existují signály, které nejsou deterministické ani stochastické. Přiřazení do určité kategorie není absolutní.
 - **V případech, kdy je deterministický popis signálu příliš složitý se může vyplatit zpracovávat jej jako stochastický signál.**
+
+- **Signál se spojitou amplitudou**
+  - Spojitý signál má definici takovou, že jeho **amplituda je spojitá funkce času**, což znamená, že nemůže mít nespojitosti.
+  - Spojitý signál je signál, **který nemá žádné skoky ani přerušení v amplitudě v žádném bodě svého trvání.** To znamená, že pro každý bod v čase t platí, **že limita signálu zleva a zprava se rovná hodnotě signálu v tomto bodě.**
+
+- **Signál s nespojitou(diskrétní) amplitudou**
 
 <br>
 
@@ -71,4 +77,12 @@
 ## Principles of physical quantity converters
 - Převodníky  slouží k převodu jedné fyzikální veličiny na jinou formu, **často na elektrický signál**, aby bylo možné veličinu měřit, monitorovat nebo regulovat.
 - Principy převodníků lze rozdělit podle různých kritérií, včetně typu převáděné veličiny (teplota, tlak, síla, pohyb, světlo atd.)
+
+
+## Temperature
+- Při měření teploty t se využívá vždy **nepřímá metoda**, při níž se přímo měří obecně jiná veličina A, která je na teplotě t závislá podle určitého vztahu
+- A = f(t)    (1)
+-  Vztah (1) může být více či méně složitý a z **něho lze hodnotu teploty číselně vypočítat [1].**
+-  
+
 
