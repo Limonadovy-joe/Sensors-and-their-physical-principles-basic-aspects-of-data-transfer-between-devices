@@ -5,10 +5,6 @@
   - [Temperature](#Temperature)
   - [Pressure](#pressure)
   - [Flow](#flow)
-  - [Eletric Power](#eletric-power)
-  - [Eletric Capacitance](#eletric-capacitance)
-  - [Inductance](#inductance)
-  - [Frequency](#frequency)
  
 
 ## Signal
@@ -140,5 +136,6 @@
 - Ultrazvukový průtokoměr je tvořen **měřicí trubicí**, ve které je zabudován **jeden nebo více párů vysílače a přijímače ultrazvukového signálu.**
 - Průtokoměry jsou velmi často konstruovány v **diferenčním zapojení**, kdy je ultrazvukový signál vysílán **jednak ve směru a jednak proti směru proudění.**
 - **Diferenciální zapojení znamená, že se měří rozdíl mezi dvěma stavy, konkrétně mezi vlnami pohybujícími se s proudem a proti proudu.** 
+
 
 
