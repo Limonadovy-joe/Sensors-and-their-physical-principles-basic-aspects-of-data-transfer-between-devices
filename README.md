@@ -5,6 +5,12 @@
   - [Temperature](#Temperature)
   - [Pressure](#pressure)
   - [Flow](#flow)
+  - [Concentration](#concentration)
+- [Contact non contact sensors](#contact-non-contact-sensors)
+- [Methods of signal transmission](#methods-of-signal-transmission)
+- [Wifi](#wifi)
+- [Radio Frequency](#radio-frequency)
+- [GSM](#gsm)
  
 
 ## Signal
@@ -137,5 +143,101 @@
 - Průtokoměry jsou velmi často konstruovány v **diferenčním zapojení**, kdy je ultrazvukový signál vysílán **jednak ve směru a jednak proti směru proudění.**
 - **Diferenciální zapojení znamená, že se měří rozdíl mezi dvěma stavy, konkrétně mezi vlnami pohybujícími se s proudem a proti proudu.** 
 
+
+## Concentration
+- Koncentrace je veličina, která číselně charakterizuje **složení směsi**. Vyjadřuje se několika způsoby.
+- **Analyzátor** - urcuje **chemické složení proudící látky** (kouřových plynů, prachových částic a pod.)
+- **Statické a dynamické vlastnosti analyzátor**
+- přesnost **analyzátorů plynu** přesnost ovlivňují:
+  - **stavové veličiny (především teplota a tlak)**
+    - Stavová veličina popisuje **stav termodynamického systému.**
+    - **Termodynamického systém**
+      - **souhrn látek v prostoru, který je omezen plochou**
+      - Uvnitř tohoto systému mohou probíhat změny.
+      - Tento systém můžeme popsat pomocí **stavových veličin (teplota, objem, tlak, látkové množství apod.)**
+      -  nebo **stavových funkcí (např. vnitřní energie, entalpie, entropie).**
+  - koncentrace doprovodných složek
+  - průtok analyzovaného vzorku
+  - napětí či proud napájecí senzor
+- **Selektivita**
+  - schopnost analyzátoru **rozlišit měřenou složku od ostatních složek směsi**
+- Dynamické vlastnosti analyzátoru
+  - kromě časové konstanty **T63 se používá i doby t50 a t90** (doba, za kterou dosáhne údaj analyzátoru 63%, 50 % resp. 90 % odezvy
+na **skokovou změnu koncentrace**)
+  - **Časová konstanta T63**: Toto je doba, za kterou **výstup senzoru dosáhne 63 % své konečné hodnoty po skokové změně koncentrace plynu**. Tato konstanta je často používána jako standardní měřítko **rychlosti odezvy senzoru**.
+  - **Doba t50**:  Tato doba je často kratší než T63 a poskytuje informace o **počáteční rychlosti odezvy senzoru.**
+  - Doba t90  Tato doba je delší než T63 a t50 a poskytuje informace **o celkové rychlosti, jak rychle se senzor blíží k rovnovážnému stavu.**
+ 
+
+## Contact non contact sensors
+- Kontaktní čidla musí být v přímém kontaktu **s měřeným objektem nebo médiem**.
+  - **Teplotní čidla (termočlánky a odporové teploměry)**
+  - **Snímače polohy a rychlosti (potenciometry, enkodéry)**
+    -  Potenciometry měří polohu nebo úhel pomocí **mechanického pohybu kontaktu po rezistoru.**
+    -  **Enkodéry měří úhlovou nebo lineární polohu a rychlost pomocí optických nebo magnetických principů.**
+- Bezkontaktní čidla měří fyzikální veličiny bez nutnosti přímého kontaktu s měřeným objektem nebo médiem.
+  - **Infračervená (IR) teplotní čidla**: Měří teplotu objektů na základě infračerveného záření emitovaného objektem.
+  - **Ultrazvuková čidla:** Používají ultrazvukové vlny k měření vzdálenosti, výšky hladiny nebo detekci objektů. Vysílají zvukové vlny a měří čas, za který se vlny odrazí zpět.
+  - **Kapacitní a indukční čidla**: Kapacitní čidla měří změny kapacity způsobené přiblížením objektu. **Indukční čidla detekují změny v magnetickém poli** způsobené kovovými objekty.
+
+
+## Methods of signal transmission
+- používají tři hlavní typy systémů přenosu signálu: **optický, rádiový a kabelový.**
+- **digitalizovaného analogového signálu**
+- vysílání (zkratka Tx) a příjem (zkratka Rx).
+
+- **Analogový přenos** je přenos spojitého proměnného signálu
+- **digitální komunikace** je přenos diskrétních zpráv.
+- Tyto zprávy jsou buďto reprezentovány **sledem impulsů prostřednictvím linkového kódu**
+  - **Linkový kód** je  způsob reprezentace **digitálního signálu pro přenos elektrickým kabelem** v základním pásmu, bez použití modulace. 
+
+- Přenos **základního nebo přeloženého pásma**
+  - **Signál v základním pásmu**
+    - Signál v základním pásmu je **sekvence elektrických nebo světelných pulzů** vytvořených pomocí linkového kódu.
+    - Sériových kabelů, kabelové sítě LAN, jako je Ethernet a optické vláknové komunikace.
+  - **Signál v přeloženém pásmu**
+    - Signál v přeloženém pásmu je **modulovaný sinusový signál** představující digitální bitový tok. Kvadraturní amplitudová modulace - QAM
+   
+- **Sériový a paralelní přenos**
+  - Seriovy
+    - sekvenční přenos signálu
+    - Digitální sériové přenosy jsou realizovány jako **bity posílané přes jeden vodič nebo sekvenčně optickou cestou**
+    - **Kontrolní součet nebo paritní bit -  redundantní bit přidaný k datovému slovu a obsahuje paritní informaci o počtu jedničkových bitů ve slově .**
+  - Paralelni
+    - Hlavním problémem je **8„zkreslení“ (a přeslechy)**, protože vodiče při paralelním přenosu mají (záměrně) mírně odlišné vlastnosti.
+    - Kvůli tomu mohou být některé **bity přijaty dříve než ostatní**, což může poškodit zprávu. K řešení tohoto problému se nabízí **paritní bit**, nicméně paralelní přenos na dlouhé vzdálenosti je stále méně spolehlivý, protože narušení přenosu je mnohem pravděpodobnější.
+
+- **Wifi**
+- je skupina bezdrátových síťových protokolů založených na standardech IEEE 802.11
+- **Rádiová pásma Wi-Fi mají poměrně vysokou pohltivost** a nejlépe fungují při přímé viditelnosti. Dosah přístupového bodu je přibližně 20 metrů v interiéru, zatímco některé přístupové body uvádějí dosah až 150 metrů ve venkovním prostředí.
+- Typicky se proto přenášejí **zapouzdřené ethernetové rámce**
+- **Struktura bezdrátové sítě**
+  -  identifikátor SSID (Service Set Identifier), což je řetězec až 32 ASCII znaků
+  -  SSID identifikátor je v **pravidelných intervalech vysílán jako broadcast**
+  -  **Přístupový bod (AP, access point)** vysílá periodicky svůj identifikátor SSID v takzvaném majákovém rámci 
+- **Acces Point**
+  - AP obvykle vykonává funkci **mostu nebo routeru (brány).**
+  - slouží k připojení klientů
+- **Router**
+  - **Brána (gateway, router)** je **uzel**, který **spojuje dvě různé sítě**. U Wi-Fi se tak označují zařízení, které zprostředkovávají přístup do **lokální sítě (LAN) nebo Internetu**
+  - a zároveň poskytují úplně **oddělení od bezdrátové sítě** (LAN/poskytovatel používá jiné IP adresy, než bezdrátoví klienti a **dochází k směrování nebo překladu síťového provozu**)
+- **Bridge**
+  - Bridge (most) je typ AP, které umožňuje **propojit bezdrátovou síť a lokální síť (LAN) tak, že bezdrátoví klienti jsou ve stejné podsíti.**
+  - Bridging a Routing (směrování) jsou podobná řízení toku dat, ale pracují pomocí různých metod. **Bridging se provádí na 2. (linkové) vrstvě (L2)**, **routing pak na 3. (síťové) vrstvě (L3)** referenčního modelu ISO/OSI. Most tedy **směruje rámce podle jejich hardwarové MAC adresy**, zatímco **router se rozhoduje podle IP adresy uvnitř přenášeného datagramu**
+
+
+## Radio Frequency
+- Vysokofrekvenční - Radio Frequency, RF
+- Kmitočty nad oblastí **slyšitelných zvukových vln**
+- V akustice se toto frekvenční pásmo nazývá **ultrazvuk.**
+- Naprostá většina **rádiových komunikačních zařízení** pracuje ve vysokofrekvenčním pásmu
+
+
+## GSM
+- je v **telekomunikacích celosvětově nejrozšířenější standard pro digitální mobilní sítě**, který vytvořil Evropský ústav pro telekomunikační normy
+-  Poprvé byl zprovozněn pod označením **2G**, 
+- standard doplněn o **datové přenosy (GPRS, EDGE - datových přenosů pomocí GPRS. )** využívané zejména pro připojení k Internetu.
+- Nástupcem jsou **sítě třetí generace (3G) standardu UMTS**, čtvrté generace (4G) a páté generace (5G).
+- GSM je **buňková síť**, což znamená, že mobilní telefony se připojují do sítě prostřednictvím nejbližší buňky.
 
 
